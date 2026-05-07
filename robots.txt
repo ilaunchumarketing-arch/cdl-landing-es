@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://es.getmycdltampa.com/sitemap.xml
