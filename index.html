@@ -198,7 +198,7 @@
     .nav-phone svg{color:var(--red);flex-shrink:0;transition:color 0.2s}
     .nav-phone:hover svg{color:#fff}
     .nav-phone .phone-label{white-space:nowrap}
-    .lang-btn{font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:800;letter-spacing:0.1em;color:var(--text-muted);background:transparent;border:none;padding:6px 11px;border-radius:100px;cursor:pointer;transition:all 0.2s;text-transform:uppercase;line-height:1}
+    .lang-btn{font-family:'Plus Jakarta Sans',sans-serif;font-size:11px;font-weight:800;letter-spacing:0.1em;color:var(--text-muted);background:transparent;border:none;padding:6px 11px;border-radius:100px;cursor:pointer;transition:all 0.2s;text-transform:uppercase;text-decoration:none;line-height:1}
     .lang-btn:hover{color:var(--text-head)}
     .lang-btn.active{background:var(--red);color:#fff;box-shadow:0 2px 8px rgba(200,16,46,0.3)}
     .lang-btn:focus-visible{outline:2px solid var(--red);outline-offset:2px}
@@ -535,8 +535,6 @@
 </head>
 <body>
 
-<!-- Hidden Google Translate mount (do not translate) -->
-<div id="google_translate_element" aria-hidden="true" translate="no" style="position:absolute;left:-9999px;top:-9999px;height:0;width:0;overflow:hidden"></div>
 
 <!-- URGENT BAR -->
 <div class="urgent-bar" role="banner">
@@ -556,10 +554,10 @@
     <a href="/blog/" class="nav-link">Blog</a>
     <a href="#faq" class="nav-link">FAQ</a>
   </div>
-  <div class="lang-switcher" role="group" aria-label="Seleccionar idioma" translate="no">
-    <button type="button" class="lang-btn active" data-lang="es" aria-label="Español" aria-pressed="true">ES</button>
-    <button type="button" class="lang-btn" data-lang="en" aria-label="English" aria-pressed="false">EN</button>
-    <button type="button" class="lang-btn" data-lang="pt" aria-label="Português" aria-pressed="false">PT</button>
+  <div class="lang-switcher" role="group" aria-label="Language">
+    <a class="lang-btn active" href="https://es.getmycdltampa.com/" aria-current="true">ES</a>
+    <a class="lang-btn" href="https://en.getmycdltampa.com/">EN</a>
+    <a class="lang-btn" href="https://pt.getmycdltampa.com/">PT</a>
   </div>
   <a href="tel:+18135258838" class="nav-phone" aria-label="Llamar (813) 525-8838">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -1316,6 +1314,5 @@
 
   if(window.matchMedia('(prefers-reduced-motion:reduce)').matches){document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'))}
 </script>
-<script src="/translate.js" defer></script>
 </body>
 </html>
