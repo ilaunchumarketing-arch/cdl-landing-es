@@ -1,8 +1,0 @@
-.vercel
-.claude
-.wrangler
-nanobanana-output
-node_modules
-.env
-.env.local
-.DS_Store
